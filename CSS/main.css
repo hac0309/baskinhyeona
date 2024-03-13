@@ -1,0 +1,105 @@
+body {
+  /* 기본(공통) 스타일 */
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+  /* 위 속성들은 모두 상속되기에 전체 스타일을 한번에 제어 */
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+img {
+  /* 이미지가 인라인 요소라서 발생하는 문자 기준선(Baseline) 아래의 공간을 제거하기 위해 */
+  display: flex;
+}
+.inner {
+  /* 고정 길이 = 고정형 */
+  /* width: 1100px; */
+  /* 최대값만 제한 = 반응형 */
+  max-width: 1100px;
+  /* 가로 너비를 가진 블록 요소를 부모 안에서 가운데 정렬 */
+  margin: 0 auto;
+  /* inner div 기준으로 내부 요소를 absolute로 배치하기 위해 */
+  position: relative;
+}
+header {
+  width: 100%;
+  /* background-color: #f986bd; */
+  height: 90px;
+  transition: 0.5s;
+}
+header:hover {
+  background-color: #f986bd;
+}
+header > .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 90px;
+}
+header .inner .menu-group h1 {
+  background-image: url("../image/h_logo.png");
+  width: 52px;
+  height: 60px;
+}
+header:hover .inner .menu-group h1 {
+  background-image: url("../image/h_logo_white.png");
+  background-repeat: no-repeat;
+}
+header .inner .menu-group {
+  display: flex;
+  align-items: center;
+}
+header .main-menu {
+  display: flex;
+  margin-left: 42px;
+  /* align-items: center; */
+}
+header .main-menu .item .item__name {
+  color: #37271f;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 13px;
+}
+header:hover .main-menu .item .item__name {
+  color: #fff;
+}
+header .main-menu .item__contents {
+  display: none;
+}
+header .search_login {
+  display: flex;
+  margin: auto 0;
+}
+header .search_login .search {
+  width: 128px;
+  height: 30px;
+  margin: auto 0;
+  border-bottom: 2px solid #f986bd;
+  padding: 0 10px;
+}
+header .search_login .search span {
+  color: #f986bd;
+  font-size: 30px;
+  /* line-height: 90px; */
+  position: absolute; 
+  right: 8%;
+  
+}
+header:hover .search_login .search span {
+  color: #fff;
+}
+header .search_login .login {
+  padding: 0 10px;
+}
+header .search_login .login span {
+  color: #37271f;
+  font-size: 30px;
+  line-height: 90px;
+}
+header:hover .search_login .login span {
+  color: #fff;
+}
