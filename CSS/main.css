@@ -39,9 +39,10 @@ header:hover {
 header > .inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   line-height: 90px;
   z-index: 10;
+  align-items: center;
+  text-align: center;
 }
 header .inner .menu-group h1 {
   background-image: url("../image/h_logo.png");
@@ -50,6 +51,7 @@ header .inner .menu-group h1 {
   position: absolute;
   top: 10px;
   left: 0px;
+  /* align-items: center; */
 }
 header:hover .inner .menu-group h1 {
   background-image: url("../image/h_logo_white.png");
@@ -117,16 +119,11 @@ header .search_login .search {
   width: 128px;
   height: 30px;
   margin: auto 0;
-  /* border-bottom: 2px solid #f986bd; */
   padding: 0 10px;
 }
 header .search_login .search span {
   color: #f986bd;
   font-size: 30px;
-  /* line-height: 90px; */
-  position: absolute; 
-  right: 8%;
-  top: 30px;
 }
 header:hover .search_login .search span {
   color: #fff;
@@ -140,7 +137,6 @@ header .search_login .login span {
   position: absolute;
   top: 30px;
   right: 3%;
-  /* line-height: 90px; */
 }
 header:hover .search_login .login span {
   color: #fff;
@@ -149,7 +145,7 @@ header:hover .search_login .login span {
 .visual {
   background-image: url("../image/bg_hero.jpg");
   width: 100%;
-  height: 880px;
+  height: 680px;
   position: absolute;
   top: 0;
   z-index: 1;
@@ -157,25 +153,47 @@ header:hover .search_login .login span {
 
 .visual .inner .visual-main {
   background-image: url("../image/bg_hero_frame.png");
-  width: 100%;
+  width: 1100px;
   height: 610px;
   background-size: cover;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
+  /* overflow: hidden; */
   top: 20px;
-  overflow: hidden;
-}
-.visual .inner .visual-main .visual-main-item {
 }
 
-.visual .inner .visual-main .visual-main-item img{
-  overflow: hidden;
-  /* background-image: url("../image/01b7b1bb8350383df3a14af9224c5628.jpg"); */
-  width: 100%;
-  height: 540px;
-  background-size: cover;
+.visual .inner .visual-main .visual-promotion {
   position: absolute;
-  top: 60px;
-  /* opacity: .5; */
-  border-radius: 172px;
+  top: 10%;
+  right: 3%;
+  transition: 2s;
+  
+}
+
+.visual .inner .visual-main .visual-promotion img {
+  width: 220px;
+  margin: 20px 0;
+}
+
+.visual .inner .visual-main .visual-promotion .btn-close {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 25px;
+  left: -25px;
+  cursor: pointer;
+  opacity: 0.9;
+  background-color: #fff;
+}
+.visual .inner .visual-main .visual-promotion.active {
+  right: -110px;
+}
+.visual .inner .visual-main .visual-promotion.active img {
+  opacity: 0;
+  transition: 2s;
+}
+.visual .inner .visual-main .visual-promotion.active .btn-close span {
+  transform: rotate(45deg);
 }
