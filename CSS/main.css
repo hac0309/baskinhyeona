@@ -1,6 +1,16 @@
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
 body {
   /* 기본(공통) 스타일 */
-  font-family: "Nanum Gothic", sans-serif;
+  font-family: 'NanumSquare';
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -20,14 +30,17 @@ img {
   margin: 0 auto;
 }
 .main-text {
+  font-family: 'yg-jalnan';
   font-size: 40px;
   color: #ff5484;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .main-description {
+  font-family: 'NanumSquare';
   font-size: 14px;
   color: #858585;
   margin-bottom: 40px;
+  font-weight: 700;
 }
 
 header {
@@ -92,12 +105,12 @@ header .main-menu .item:hover .item__contents {
 header .main-menu .item__contents .inner {
   display: flex;
   justify-content: space-between;
-  width: 900px;
+  width: 1100px;
 }
 
 header .main-menu .item__contents .inner a {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
   padding: 0 16px;
   cursor: pointer;
   color: #37271f;
@@ -442,14 +455,46 @@ header:hover .search_login .login span {
 
 
 .store-brway {
+  width: 100%;
+  height: 440px;
+}
 
+.store-brway .inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 0 10px;
+  align-items: center;
+}
+
+.store-brway .store,
+.store-brway .br-way {
+  padding: 0 40px;
 }
 
 .store-brway .store .header,
 .store-brway .br-way .header {
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  /* text-align: center; */
-  margin-bottom: ;
+  align-items: center;
+  /* justify-content: center; */
+  /* position: absolute; */
+}
+.store-brway .br-way .header {
+  position: relative;
+  bottom: -37px;
+}
+.store-brway .store img,
+.store-brway .br-way img {
+  width: 100%;
+  position: relative;
+}
+
+.store-brway .br-way img {
+  margin-top: -29px;
+}
+
+.store-brway .store .header p.main-description,
+.store-brway .br-way .header p.main-description{
+  margin-bottom: 0;
+  margin-left: 7px;
+  z-index: 1;
 }
