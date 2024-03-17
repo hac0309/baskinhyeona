@@ -33,9 +33,22 @@ new Swiper('.new-item .swiper', {
 });
 
 new Swiper('.br-benefit .swiper', {
-  loop: false, // 반복 재생 여부, 1->2->3->4->1->2...
-  autoplay: true, // 자동 재생 여부
-  slidesPerView: 5, // 한 번에 보여줄 슬라이드 개수 (기본값: 1)
-  spaceBetween: 30, // 슬라이드 사이 여백(간격)px
-  centeredSlides: false // 1번 슬라이드가 가운데 보이기
+  loop: false,
+  autoplay: true, 
+  slidesPerView: 5, 
+  spaceBetween: 30, 
+  centeredSlides: false 
 });
+
+// const headerEl = document.querySelector('header')
+
+// if (scrollY > 10) {
+//   headerEl.style.
+// } else {
+  
+// }
+
+
+new Date().getFullYear(); 
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear();
