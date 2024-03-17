@@ -522,9 +522,19 @@ footer .footer-nav li a {
 footer .footer-container {
   display: flex;
   justify-content: space-between;
+  /* flex-direction: column; */
 }
 
 footer .footer-container .menu-list {
   display: flex;
-  flex-direction: column;
+  
+}
+footer .footer-container .menu-list ul {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+footer .footer-container .menu-list ul li {
+  display: flex;
+  /* flex-direction: column; */
 }
