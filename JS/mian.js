@@ -12,7 +12,7 @@ const btnCloseEl = document.querySelector('.btn-close');
 const visualProEl = document.querySelector('.visual-promotion');
 
 btnCloseEl.addEventListener('click', function () {
-  visualProEl.classList.toggle('active');
+  visualProEl.classList.toggle('hide');
 });
 
 new Swiper('.promotion .swiper', {

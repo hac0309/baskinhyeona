@@ -111,7 +111,6 @@ header .main-menu .item .item__contents {
 }
 header .main-menu .item:hover .item__contents {
   display: flex;
-  justify-content: center;
   align-items: center;
   line-height: 1.4;
   text-align: left;
@@ -215,6 +214,7 @@ header.scroll_on .search_login .login span {
   color: #fff;
 }
 
+
 .visual {
   background-image: url("../image/bg_hero.jpg");
   width: 100%;
@@ -260,13 +260,13 @@ header.scroll_on .search_login .login span {
   opacity: 0.9;
   background-color: #fff;
 }
-.visual .inner .visual-main .visual-promotion.active {
+.visual .inner .visual-main .visual-promotion.hide {
   right: -110px;
 }
-.visual .inner .visual-main .visual-promotion.active img {
+.visual .inner .visual-main .visual-promotion.hide img {
   opacity: 0;
 }
-.visual .inner .visual-main .visual-promotion.active .btn-close span {
+.visual .inner .visual-main .visual-promotion.hide .btn-close span {
   transform: rotate(45deg);
 }
 
@@ -485,11 +485,11 @@ header.scroll_on .search_login .login span {
 }
 .bb-item .bb-item-text span {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 900;
 }
 .bb-item .bb-item-text p {
   font-size: 11px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .br-benefit {
@@ -573,6 +573,7 @@ footer .footer-nav {
 }
 footer .footer-nav li a {
   color: #fff;
+  padding: 10px;
 }
 
 footer .footer-container {
