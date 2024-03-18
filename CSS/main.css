@@ -1,3 +1,4 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 @font-face {
   font-family: 'yg-jalnan';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
@@ -5,7 +6,6 @@
   font-style: normal;
 }
 
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 
 body {
@@ -25,6 +25,7 @@ img {
   /* 이미지가 인라인 요소라서 발생하는 문자 기준선(Baseline) 아래의 공간을 제거하기 위해 */
   display: block;
 }
+
 .inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -53,6 +54,9 @@ header {
 header:hover {
   background-color: #f986bd;
 }
+header.scroll_on {
+  background-color: #f986bd;
+}
 header > .inner {
   display: flex;
   justify-content: space-between;
@@ -65,7 +69,12 @@ header .inner .menu-group .logo {
   top: 10px;
   left: 0px;
 }
+
 header:hover .inner .menu-group .logo {
+  background-image: url("../image/h_logo_white.png");
+  background-repeat: no-repeat;
+}
+header.scroll_on .inner .menu-group .logo {
   background-image: url("../image/h_logo_white.png");
   background-repeat: no-repeat;
 }
@@ -79,12 +88,18 @@ header .main-menu {
 }
 header .main-menu .item .item__name {
   color: #37271f;
-  font-weight: bold;
+  font-weight: 900;
   padding: 10px;
   font-size: 13px;
 }
 header:hover .main-menu .item .item__name {
   color: #fff;
+}
+header.scroll_on .main-menu .item .item__name {
+  color: #fff;
+}
+header .main-menu .item .item__name:hover {
+  color: #37271f;
 }
 header .main-menu .item .item__contents {
   background-color: #ffffff;
@@ -110,20 +125,30 @@ header .main-menu .item__contents .inner {
 
 header .main-menu .item__contents .inner a {
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 900;
   padding: 0 16px;
   cursor: pointer;
   color: #37271f;
 }
 
+header .main-menu .item__contents .inner a:hover {
+  color: #ff4d72;
+}
+
 header .main-menu .item__contents .inner li ul {
   display: flex;
 }
+
 header .main-menu .item__contents .inner li ul > li {
   font-size: 17px;
   padding: 5px 10px;
+  font-weight: 900;
+  color: #969291;
 }
-
+header .main-menu .item .item__contents > ul > li ul li:hover {
+  color: #ff4d72;
+  cursor: pointer;
+}
 header .search_login {
   display: flex;
   line-height: 17px;
@@ -144,11 +169,38 @@ header .search_login .search span {
 header:hover .search_login .search {
   border-bottom: 2px solid #fff;
 }
+header.scroll_on .search_login .search {
+  border-bottom: 2px solid #fff;
+}
 header:hover .search_login .search span {
+  color: #fff;
+}
+header.scroll_on .search_login .search span {
   color: #fff;
 }
 header .search_login .login {
   padding: 0 10px;
+}
+header .search_login .login > ul li > .login_seb {
+  border: 2px solid #f986bd;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  top: 60px;
+  right: 17px;
+  display: inline-block;
+  opacity: 0;
+  transition: 0.5s;
+}
+header .search_login .login > ul li > .login_seb.active {
+  opacity: 1;
+}
+header .search_login .login > ul li > .login_seb > li {
+  padding: 5px;
+  font-weight: 900;
+  cursor: pointer;
 }
 header .search_login .login span {
   color: #37271f;
@@ -157,6 +209,9 @@ header .search_login .login span {
   top: 30px;
 }
 header:hover .search_login .login span {
+  color: #fff;
+}
+header.scroll_on .search_login .login span {
   color: #fff;
 }
 
@@ -342,6 +397,7 @@ header:hover .search_login .login span {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  cursor: pointer;
 }
 .new-item .swiper-pagination {
   z-index: 1;
@@ -451,6 +507,7 @@ header:hover .search_login .login span {
   width: 190px;
   height: 190px;
   border-radius: 15px;
+  cursor: pointer;
 }
 
 
@@ -486,6 +543,7 @@ header:hover .search_login .login span {
 .store-brway .br-way img {
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 
 .store-brway .br-way img {
