@@ -213,6 +213,39 @@ header:hover .search_login .login span {
 header.scroll_on .search_login .login span {
   color: #fff;
 }
+.btn-hamburger {
+  display: none;
+}
+.btn-hamburger > span {
+  font-size: 48px;
+  color: #fff;
+}
+.m-menu-list {
+  /* display: none; */
+  width: 50%;
+  height: 100vh;
+  background-color: #f986bd;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: .5s;
+  opacity: 0.97;
+}
+.m_item__contents {
+  display: none;
+}
+
+.m-menu-list.active {
+  right: 0;
+}
+.m-menu-list div {
+  text-align: right;
+}
+.m-menu-list .btn-close span{
+  font-size: 48px;
+  color: #fff;
+}
 
 
 .visual {
@@ -225,7 +258,7 @@ header.scroll_on .search_login .login span {
 
 .visual .inner .visual-main {
   background-image: url("../image/bg_hero_frame.png");
-  width: 1100px;
+  max-width: 1100px;
   height: 610px;
   background-size: cover;
   margin: 0 auto;
@@ -340,12 +373,12 @@ header.scroll_on .search_login .login span {
 }
 
 .new-item .inner {
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
 .new-item .swiper {
-  width: 100%
+  /* width: 100% */
 }
 
 .new-item .swiper .swiper-slide {
@@ -634,4 +667,155 @@ footer .footer-bottom .footer-bottom-right {
 
 footer .footer-bottom .footer-bottom-right > img {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 1023px) {
+  .inner {
+    max-width: 1023px;
+    margin: 0 auto;
+  }
+  header .main-menu .item__contents .inner a {
+    padding: 0 12px;
+  }
+  .visual .inner .visual-main {
+    background-image: url('../image/01b7b1bb8350383df3a14af9224c5628.jpg');
+    background-position: center;
+    top: 0;
+    height: 680px;
+  }
+  .visual .inner .visual-main .visual-promotion {
+    display: none;
+  }
+  .promotion-text {
+    font-size: 12px;
+    padding-top: 25px;
+    text-align: center;
+  }
+  .promotion-date {
+    font-size: 14px;
+    margin: 15px 0;
+  }
+  .promotion .swiper img {
+    margin: 0 auto;
+  }
+  .new-item .swiper .swiper-slide .new-item-left .new-item-frame-textbox {
+    display: none;
+  }
+  .new-item .swiper .swiper-slide .new-item-right {
+    width: 50%;
+    margin-left: 5%;
+  }
+  .new-item img {
+    
+  }
+  .btn-item {
+    display: none;
+  }
+  .bb-item .bb-item-text span {
+    font-size: 19px;
+  }
+  .store-brway .br-way,
+  .store-brway .store {
+    padding: 0 5px;
+  }
+  .store-brway .br-way img {
+    margin-top: -15px;
+  }
+  footer .footer-nav {
+    font-size: 10px;
+  }
+  footer .footer-nav li a {
+    font-size: 8px;
+    padding: 0;
+  }
+  footer .footer-container .menu-list > ul > li {
+    font-size: 18px;
+    padding: 16px 2px;
+  }
+  footer .footer-container .menu-list > ul > li ul li {
+    font-size: 12px;
+  }
+  .main-text {
+    font-size: 30px;
+  }
+  .main-description {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inner {
+    max-width: 767px;
+  }
+  header > .inner {
+    align-items: center;
+  }
+  header .main-menu,
+  header .search_login {
+    display: none;
+  }
+  .m-menu-list .m_item { 
+    font-size: 28px;
+    color: #f4e8df;
+    line-height: 40px;
+  }
+  .m-menu-list .m_item > a { 
+    font-weight: 900;
+    color: #333;
+    font-size: 32px;
+    line-height: 60px;
+  }
+  .m_item.show .m_item__contents {
+    display: block;
+  }
+  .btn-hamburger {
+    display: block;
+  }
+  .btn-hamburger > span {
+    font-size: 56px;
+    padding-top: 10px;
+  }
+  .br-play {
+    height: 100%;
+  }
+  .br-play .inner .img-group {
+    display: block;
+    left: 50%;
+    margin-left: -178px;
+  }
+  .be-better {
+    height: 100%;
+  }
+  .be-better .inner .bb-container {
+    display: block;
+  }
+  .store-brway {
+    height: 100%;
+    padding: 0 0 20px;
+  }
+  .store-brway .inner {
+    display: block;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .footer-nav, 
+  footer .info {
+    margin: 0 auto;
+    text-align: center;
+  }
+  footer .info img {
+    margin: 0 auto;
+  }
+  footer .footer-bottom {
+    justify-content: center;
+  }
+  footer .footer-bottom .footer-bottom-right > img {
+    margin: 0 24px;
+  }
+  footer .footer-bottom .footer-bottom-left,
+  footer .menu-list,
+  footer .footer-nav {
+    display: none;
+  }
 }
