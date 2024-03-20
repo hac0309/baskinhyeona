@@ -85,7 +85,7 @@ personBtn.addEventListener('click', function () {
 
 const navEl = document.querySelector('.m-menu-list');
 const hamburgerEl = document.querySelector('.btn-hamburger');
-const closeEl = document.querySelector('.btn-close');
+const closeEl = document.querySelector('.m-btn-close');
 
 hamburgerEl.addEventListener('click', function () {
   navEl.classList.add('active');
@@ -118,3 +118,24 @@ new Swiper('.m-new-item .swiper', {
     clickable: true 
   }
 });
+
+const btnSearch = document.querySelector('.search-icon')
+const seachModal = document.querySelector('#search-modal')
+const closeBtn2 = document.querySelector('.close-btn2')
+const schBtn = document.querySelector('.sch-btn')
+
+btnSearch.addEventListener('click', function () {
+  seachModal.classList.add('active');
+});
+closeBtn2.addEventListener('click', function () {
+  seachModal.classList.remove('active');
+});
+
+schBtn.addEventListener('click', function () {
+  alert("죄송..합니다...미구현....");
+});
+
+function reset(){
+	document.querySelectorAll("input[type=text]")[0].value="";
+}
+
