@@ -105,3 +105,16 @@ mItemEls.forEach(function (mItemEl, Itemindex) {
   });
 });
 
+
+new Swiper('.m-new-item .swiper', {
+  speed : 1000,
+  loop: false, 
+  autoplay: true, 
+  slidesPerView: 1, 
+  spaceBetween: 50, 
+  centeredSlides: false,
+  pagination: { 
+    el: '.m-new-item .swiper-pagination', 
+    clickable: true 
+  }
+});

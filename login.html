@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>배스킨라빈스</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <!-- 구글 웹폰트 연결 -->
+  <!-- 구글 웹폰트: 경량화된 오픈 라이선스 폰트, 한글 지원하는지 확인 및 필요한 굵기만 선택 후 연결 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  
+
+  <!-- 구글 머티리얼 아이콘: 구글에서 제공하는 머티리얼 스타일의 아이콘, 글자처럼 취급 가능한 장점 -->
+  <!-- 그 외, fontawesome, bootstrap icon 등 -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <!-- main.css -->
+  <link rel="stylesheet" href="./CSS/main.css">
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- main.js -->
+  <script defer src="./JS/mian.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <!-- inner -->
+    <div class="inner">
+      <div class="menu-group">
+        <a href="javascript:void(0)" class="logo"></a>
+        
+
+        <!-- menu -->
+        <ul class="main-menu">
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Menu</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li><a href="#none">이달의 맛</a><li>
+                <li><a href="#none">아이스크림</a></li>
+                <li><a href="#none">블록팩/레디팩</a></li>
+                <li><a href="#none">아이스크림 케이크</a></li>
+                <li><a href="#none">디저트</a></li>
+                <li><a href="#none">음료</a></li>
+                <li><a href="#none">커피</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">BR Play</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li><a href="javascript:void(0)">이벤트</a>
+                  <ul>
+                    <li>프로모션</li>
+                    <li>제휴혜택</li>
+                  </ul>
+                </li>
+                <li><a href="javascript:void(0)">BR Play</a>
+                  <ul>
+                    <li>베라광장</li>
+                    <li>BR레시피</li>
+                    <li>마이플레이버리스트</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">BR Story</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li><a href="javascript:void(0)">브랜드 스토리</a></li>
+                <li><a href="javascript:void(0)">이달의 맛 히스토리</a></li>
+                <li><a href="javascript:void(0)">Be Better</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Delivery/Store</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <a href="javascript:void(0)">Store</a>
+                  <ul>
+                    <li>매장찾기</li>
+                    <li>100flavor 플래그쉽스토어</li>
+                    <li>Flow 매장</li>
+                    <li>점포개설문의</li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">Delivery</a>
+                  <ul>
+                    <li>배달주문</li>
+                    <li>단체주문</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- m-menu-list -->
+      <div class="m-menu-list">
+        <div>
+          <a href="#none" class="btn-close">
+            <span class="material-icons">close</span>
+          </a>
+        </div>
+        <ul class="m-main-menu">
+          <li class="m_item"><a href="#none" class="m_item__name">Menu</a>
+            <div class="m_item__contents">
+              <ul>
+                <li>이달의맛</li>
+                <li>아이스크림</li>
+                <li>블록팩/레디팩</li>
+                <li>아이스크림 케이크</li>
+                <li>디저트</li>
+                <li>음료</li>
+                <li>커피</li>
+              </ul>
+            </div>
+          </li>
+          <li class="m_item"><a href="#none" class="m_item__name">BR Play</a>
+            <div class="m_item__contents">
+              <ul>
+                <li>이벤트</li>
+                <li>배라광장</li>
+                <li>BR레시피</li>
+                <li>마이플레이버리스트</li>
+              </ul>
+            </div>
+          </li>
+          <li class="m_item"><a href="#none" class="m_item__name">BR Story</a>
+            <div class="m_item__contents">
+              <ul>
+                <li>브랜드 스토리</li>
+                <li>이달의 맛 히스토리</li>
+                <li>Be Better</li>
+              </ul>
+            </div>
+          </li>
+          <li class="m_item"><a href="#none" class="m_item__name">Delivery/Store</a>
+            <div class="m_item__contents">
+              <ul>
+                <li>매장찾기</li>
+                <li>100flavor 플래그십스토어</li>
+                <li>Flow 매장</li>
+                <li>점포개설문의</li>
+                <li>배달주문</li>
+                <li>단체주문</li>
+              </ul>
+            </div>
+          </li>
+          <li class="m_item"><a href="#none" class="m_item__name">Information Center</a>
+            <div class="m_item__contents">
+              <ul>
+                <li>고객센터</li>
+                <li>소비자중심경영(CCM)</li>
+                <li>칭찬점포</li>
+                <li>공지사항</li>
+                <li>보도자료</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- search&login -->
+      <div class="search_login">
+        <div class="search">
+          <a href="javascript:void(0)"><span class="material-icons">search</span></a>
+        </div>
+        <div class="login">
+          <ul>
+            <li><a href="javascript:void(0)" class="person-btn"><span class="material-symbols-outlined">person</span></a>
+              <ul class="login_seb">
+                <li>Log in</li>
+                <li>Search</li>
+                <li>CS CENTER</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="#none" class="btn-hamburger">
+        <span class="material-icons">menu</span>
+      </a>
+    </div>
+  </header>
+
+  <section class="login">
+    <div class="inner">
+        <img src="./image/h_logo.png" alt="배스킨라빈스">
+        <input type="text" placeholder="ID">
+        <input type="text" placeholder="PASSWARD">
+        <button>LOGIN</button>
+
+        <p>아이디 찾기</p>
+        <p>비밀번호 찾기</p>
+        <p>회원가입</p>
+    </div>
+  </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="#javascript:void(0)">신규 직영점 입점제의</a></li>
+            <li><a href="#javascript:void(0)">점포개설문의</a></li>
+            <li><a href="#javascript:void(0)">채용문의</a></li>
+            <li><a href="#javascript:void(0)">윤리신고센터</a></li>
+            <li><a href="#javascript:void(0)">해피포인트카드 이용약관</a></li>
+            <li><a href="#javascript:void(0)">배스킨라빈스 리워드 이용약관</a></li>
+            <li><a href="#javascript:void(0)">개인정보처리방침</a></li>
+            <li><a href="#javascript:void(0)">영상정보처리기기운영관리방침</a></li>
+            <li><a href="#javascript:void(0)">안전보건 경영방침</a></li>
+            <li><a href="#javascript:void(0)">거래희망회사 사전등록</a></li>
+          </ul>
+        </nav>
+        <div class="footer-container">
+          <div class="info">
+            <img src="./image/h_logo_2.png" alt="배스킨라빈스">
+            <p>사업자 등록번호 : 1997-03-09</p>
+            <p>우리집 강아지 귀여워(주) 대표이사 최하루</p>
+            <p>인천 광역시 하루네집 마리네동 309호</p>
+            <p>TEL: 110-395-354002</p>
+            <p>개인정보관리책임자 : 최엔젤/최마리</p>
+            <p class="copyright">Copyright
+              &copy; <span class="this-year"></span>
+              BRKOREA Company. All Rights Reserved.
+            </p>
+          </div>
+          <div class="menu-list">
+            <ul>
+              <li>Menu
+                <ul>
+                  <li>이달의맛</li>
+                  <li>아이스크림</li>
+                  <li>블록팩/레디팩</li>
+                  <li>아이스크림 케이크</li>
+                  <li>디저트</li>
+                  <li>음료</li>
+                  <li>커피</li>
+                </ul>
+              </li>
+              <li>BR Play
+                <ul>
+                  <li>이벤트</li>
+                  <li>배라광장</li>
+                  <li>BR레시피</li>
+                  <li>마이플레이버리스트</li>
+                </ul>
+              </li>
+              <li>BR Story
+                <ul>
+                  <li>브랜드 스토리</li>
+                  <li>이달의 맛 히스토리</li>
+                  <li>Be Better</li>
+                </ul>
+              </li>
+              <li>Delivery/Store
+                <ul>
+                  <li>매장찾기</li>
+                  <li>100flavor 플래그십스토어</li>
+                  <li>Flow 매장</li>
+                  <li>점포개설문의</li>
+                  <li>배달주문</li>
+                  <li>단체주문</li>
+                </ul>
+              </li>
+              <li>Information Center
+                <ul>
+                  <li>고객센터</li>
+                  <li>소비자중심경영(CCM)</li>
+                  <li>칭찬점포</li>
+                  <li>공지사항</li>
+                  <li>보도자료</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <img src="./image/btn_happy_point.png" alt="해피 포인트">
+            <img src="./image/btn_happy_market.png" alt="해피 마켓">
+            <img src="./image/btn_spc_story.png" alt="SPC그룹 사회공헌활동">
+            <img src="./image/btn_ksa.png" alt="KSA">
+            <img src="./image/btn_ccm.png" alt="CCM 소비자 중심">
+          </div>
+          <div class="footer-bottom-right">
+            <img src="./image/btn_instagram.png" alt="인스타그램 바로가기">
+            <img src="./image/btn_youtube.png" alt="유튜브 바로가기">
+            <img src="./image/btn_facebook.png" alt="페이스북 바로가기">
+            <img src="./image/btn_magazine.png" alt="베라 매거진 바로가기">
+          </div>
+        </div>
+      </div>
+    </footer>
