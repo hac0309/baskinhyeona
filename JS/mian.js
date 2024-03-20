@@ -95,7 +95,6 @@ closeEl.addEventListener('click', function () {
   navEl.classList.remove('active');
 });
 
-// document.addEventListener("touchstart", function() {}, true);
 
 const mItemEls = document.querySelectorAll('.m_item');
 
@@ -104,7 +103,6 @@ mItemEls.forEach(function (mItemEl, Itemindex) {
     mItemEls[Itemindex].classList.toggle('show');
   });
 });
-
 
 new Swiper('.m-new-item .swiper', {
   speed : 1000,
